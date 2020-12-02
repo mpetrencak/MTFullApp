@@ -31,7 +31,8 @@ class WordListAdapter : ListAdapter<Word, WordListAdapter.WordViewHolder>(WordsC
             wordItemView.text = text
         }
 
-        companion object {
+        companion object
+        {
             fun create(parent: ViewGroup): WordViewHolder
             {
                 val view: View = LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_item, parent, false)
