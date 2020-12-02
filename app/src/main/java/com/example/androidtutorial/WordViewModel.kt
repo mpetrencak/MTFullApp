@@ -3,6 +3,12 @@ package com.example.androidtutorial
 import androidx.lifecycle.*
 import kotlinx.coroutines.launch
 
+
+//The ViewModel's role is to provide data to the UI and survive configuration changes.
+//A ViewModel acts as a communication center between the Repository and the UI.
+// You can also use a ViewModel to share data between fragments.
+
+
 class WordViewModel(private val repository: WordRepository) : ViewModel()
 {
 
